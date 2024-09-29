@@ -40,7 +40,7 @@ const SecondaryInfo = () => {
                   window.location.href = "/report";
                 }}
               >
-                Start Free Trial
+                Start 
               </Button>
               <Typography variant="caption" sx={{ mt: 2, display: 'block', color: 'text.secondary' }}>
                 free to use, no credit card required
