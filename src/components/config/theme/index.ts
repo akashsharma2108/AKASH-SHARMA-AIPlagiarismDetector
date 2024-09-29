@@ -77,7 +77,7 @@ export const float = keyframes`
     100% { transform: translateY(0px) rotate(0deg); }
   `;
 
-export const FloatingCard = styled(motion(Card as any))(({ }) => ({
+export const FloatingCard = styled(motion(Card as any))(({ theme }) => ({
   background: "rgba(255, 255, 255, 0.05)",
   backdropFilter: "blur(10px)",
   border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -95,7 +95,7 @@ export const FeatureIcon = styled("div")(({ theme }) => ({
   boxShadow: "0 0 30px rgba(98, 0, 234, 0.6)",
 }));
 
-export const StyledTextField = styled(TextField)(({  }) => ({
+export const StyledTextField = styled(TextField)(({ theme }) => ({
   "& .MuiOutlinedInput-root": {
     borderRadius: "30px",
     backgroundColor: "rgba(255, 255, 255, 0.05)",
