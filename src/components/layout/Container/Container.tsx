@@ -1,4 +1,6 @@
-import { Box } from '@mui/material';
+import NavBar  from '../navbar/Navbar';
+import Footer from '../footer/Footer';
+import { GradientBackground } from '../../config/theme';
 
 const Container: React.FC<{
   children?: React.ReactNode;
@@ -6,21 +8,11 @@ const Container: React.FC<{
 
   return (
     <>
-    <Box sx={{ display: 'flex' }}>
-
-        <Box
-          component="main"
-          sx={{
-            flexGrow: 1,
-            backgroundColor : '#f5f6fb',
-            height: '100vh',
-            overflowX : 'hidden',
-            padding: '20px',
-          }}
-        >
+      <GradientBackground >
+       <NavBar />
           {children}
-        </Box>{' '}
-      </Box>
+       <Footer />
+      </GradientBackground>
     </>
   );
 };
